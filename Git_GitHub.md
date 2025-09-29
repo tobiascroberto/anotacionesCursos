@@ -89,6 +89,34 @@ git push -u origin main
 
 
 
+# Creacion de ramas 
+
+* ver ramas existentes: 
+** git branch (la que tiene asterisco es la rama actual)
+
+*crear ramas: 
+
+** git branch nombre_rama
+
+* cambiar entre ramas: 
+
+** checkout nombre_rama
+
+* crear y cambiar de rama en un paso: 
+
+** git checkout -b nombre_rama
+
+* subir rama al repositorio remoto
+** git push -u origin nueva_rama
+
+* Eliminar una rama local 
+
+** git branch -d nombre_rama (elminina la rama si fue fusionada con otra)
+
+** git branch -D nombre_rama (D mayúscula fuerza la eliminación aunque no este fusionada.)
+
+* Eliminar rama remota
+** git push origin --delete nombre_rama
 
 
 
