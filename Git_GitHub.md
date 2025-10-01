@@ -123,4 +123,70 @@ git push -u origin main
 ## Configuración para push (jal)
 
 
+# Cheat Sheet 
+
+## Setup & cConfig 
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --list 
+
+
+## Starting a Repo
+
+git init  # Star new local repo in the current directory 
+git clone \< url >  # Clone repo from GitHub
+
+## Basic Workflow 
+git status # Check status 
+git add <file> # Stage a file 
+git add .  # Stage all changes 
+git commit -m "message" # commit staged changes 
+git commit -am "message" # add and commit at once 
+git log # show commit history  
+
+## Branching 
+git branch  # List branches 
+git branch < name >   # Create new branch 
+git checkout < name >  # Swith to branch 
+git checkout -b < name > # Create + Swith branch
+git merge < branch > # Merge branch into current 
+git branch -d < name > # Delete branch 
+
+## Remote (GitHub)
+git remote -v # show remotes 
+git remote add origin < url > # Add remote origin 
+git push -u origin main # push first time 
+git push # push changes 
+git pull # Pull lastest changes
+git fetch # fetch branches/ tags
+
+# Undo & Fix 
+git checkout -- < file > # Discard changes ( before stanging)
+git reset HEAD < file > # Unstage a file 
+git reset --hard HEAD # Reset to last commit (loses changes) 
+git revert < commit > # New commit that undoes a commit 
+
+# Stash 
+git stash # Save uncommitted changes 
+git stash pop # Reapply last stash 
+git stash list # show stashes 
+
+# Tags 
+git tag v1.0 # create tag 
+git tag # list tags 
+git push origin v1.0 # Push tag to GitHub 
+
+
+
+
+# terminal commands
+
+echo "#  Title " > README.md # crea un archivo md con el texto "# Title" dentro del archivo. 
+
+
+
+
+
+
 
